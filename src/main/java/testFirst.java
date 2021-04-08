@@ -42,9 +42,9 @@ public class testFirst {
 
    }
 
-    @AfterClass
-    public void tearDown(){
+//     @AfterClass
+//     public void tearDown(){
 
-        driver.quit();
-    }
+//         driver.quit();
+//     }
 }
