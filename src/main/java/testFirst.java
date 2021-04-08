@@ -36,7 +36,18 @@ public class testFirst {
 
    @Test
    public void ParallelTest_2() throws InterruptedException {
-       System.setProperty("webdriver.chrome.driver","./src/parallelTest/chromedriver");
+       System.setProperty("Webdriver.chrome.driver", System.getProperty("user.dir") + "chromedriver");
+        ChromeOptions options = new ChromeOptions();
+        // options.setExperimentalOption("useAutomationExtension", false);
+        options.addArguments("--headless");
+        options.addArguments("window-size=1200,600");
+        options.addArguments("--disable-extensions"); // disdemoabling extensions
+        options.addArguments("--disable-gpu"); // applicable to windows os only
+        options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+        options.addArguments("--no-sandbox");
+        driver = new ChromeDriver(options);
+        driver.get("https://opensource-demo.orangehrmlive.com/");
+
        driver.get("https://opensource-demo.orangehrmlive.com/");
 
        Assert.assertEquals(driver.getTitle(), "OrangeHRM");
