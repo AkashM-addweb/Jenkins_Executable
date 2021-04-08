@@ -48,8 +48,6 @@ public class testFirst {
         driver = new ChromeDriver(options);
         driver.get("https://opensource-demo.orangehrmlive.com/");
 
-       driver.get("https://opensource-demo.orangehrmlive.com/");
-
        Assert.assertEquals(driver.getTitle(), "OrangeHRM");
        Thread.sleep(3000);
        System.out.println("------------------------<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>--------------------------------");
