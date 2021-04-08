@@ -29,7 +29,9 @@ public class testFirst {
     WebElement logo= driver.findElement(By.xpath("//*[@id=\'divLogo\']/img"));
     Assert.assertEquals(logo.isDisplayed(), true);
     Thread.sleep(2000);
-        System.out.println("This test case is working fine");
+        System.out.println("------------------------<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>--------------------------------");
+        System.out.println("TEST CASE 1 IS WORKING FINE");
+        System.out.println("------------------------<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>--------------------------------");
  }
 
    @Test
@@ -39,7 +41,9 @@ public class testFirst {
 
        Assert.assertEquals(driver.getTitle(), "OrangeHRM");
        Thread.sleep(3000);
-
+       System.out.println("------------------------<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>--------------------------------");
+    System.out.println("TEST CASE 2 IS WORKING FINE");
+       System.out.println("------------------------<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>--------------------------------");
    }
 
 //     @AfterClass
