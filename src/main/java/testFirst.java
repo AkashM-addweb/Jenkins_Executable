@@ -32,15 +32,15 @@ public class testFirst {
         System.out.println("This test case is working fine");
  }
 
-//    @Test
-//    public void ParallelTest_2() throws InterruptedException {
-//        System.setProperty("webdriver.chrome.driver","./src/parallelTest/chromedriver");
-//        driver.get("https://opensource-demo.orangehrmlive.com/");
-//
-//        Assert.assertEquals(driver.getTitle(), "OrangeHRM");
-//        Thread.sleep(3000);
-//
-//    }
+   @Test
+   public void ParallelTest_2() throws InterruptedException {
+       System.setProperty("webdriver.chrome.driver","./src/parallelTest/chromedriver");
+       driver.get("https://opensource-demo.orangehrmlive.com/");
+
+       Assert.assertEquals(driver.getTitle(), "OrangeHRM");
+       Thread.sleep(3000);
+
+   }
 
     @AfterClass
     public void tearDown(){
